@@ -41,11 +41,16 @@ const options: Options = {
     'file-loader',
     'identity-obj-proxy',
     'jest-cli',
+    '@types/mocha',
     'mocha',
     'style-loader',
     'ts-loader',
     'ttypescript',
     'url-loader',
+    'react-devtools',
+    '@types/react-devtools',
+    'react-devtools',
+    'tslib',
   ],
 };
 

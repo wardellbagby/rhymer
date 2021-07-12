@@ -14,6 +14,9 @@ describe('Electron launch', () => {
 
   beforeEach(async () => {
     tempDir = path.resolve(os.tmpdir(), 'lyricistant-electron-test');
+    await del(tempDir, {
+      force: true,
+    });
     app = new Application({
       path: require.resolve('electron/cli'),
       args: [
@@ -35,9 +38,6 @@ describe('Electron launch', () => {
   });
 
   afterEach(async () => {
-    await del(tempDir, {
-      force: true,
-    });
     if (app) {
       app.mainProcess.exit(0);
     }

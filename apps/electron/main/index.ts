@@ -20,7 +20,7 @@ let appComponent: DIContainer;
 let rendererDelegate: RendererDelegate;
 let logger: Logger;
 
-if (isDevelopment) {
+if (isDevelopment || isUiTest) {
   debug({
     isEnabled: true,
     showDevTools: false,

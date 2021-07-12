@@ -88,6 +88,10 @@ If you'd like to attach a debugger while testing via terminal:
 node --inspect-brk ./node_modules/.bin/gulp testAll # Replace testAll with whatever command you'd like.
 ```
 
+### React Devtools for Electron
+
+In order to use React Devtools on Electron, this app includes the `react-devtools` dependency. When starting the Electron app, the app will automatically try to connect to a running React Devtools instance. You can start an instance of React Devtools by running `node_modules/.bin/react-devtools`, and start the app in a different terminal by running `gulp startElectron`.
+
 ### Updating dependencies
 
 There's a helper script at `bin/install-latest.ts` that can be used to update all dependencies in the project that start with a specific string to a specified version.

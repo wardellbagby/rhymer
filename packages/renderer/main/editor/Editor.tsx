@@ -6,16 +6,13 @@ import { EditorView } from '@codemirror/view';
 import { redo, undo, undoDepth } from '@codemirror/history';
 import { EditorState, EditorStateConfig } from '@codemirror/state';
 import { openSearchPanel } from '@codemirror/search';
-import { logger, platformDelegate } from "@lyricistant/renderer/globals";
-import { useDocumentListener } from "@lyricistant/renderer/util/useEventListener";
+import { logger, platformDelegate } from '@lyricistant/renderer/globals';
+import { useDocumentListener } from '@lyricistant/renderer/util/useEventListener';
 import { toDroppableFile } from './to-droppable-file';
-import {
-  useReplacedWords,
-  useSelectedWordStore,
-} from './SelectedWordStore';
+import { useReplacedWords, useSelectedWordStore } from './SelectedWordStore';
 import { useEditorTextStore } from './EditorTextStore';
 
-export function Editor() {
+export const Editor: React.FC = () => {
   const [editor, setEditor] = useState<EditorView>(null);
   const [defaultConfig, setDefaultConfig] = useState<EditorStateConfig>(null);
   useDocumentListener(
@@ -67,7 +64,7 @@ export function Editor() {
       onTextChanged={onEditorText}
     />
   );
-}
+};
 
 function handleEditorEvents(
   editor: EditorView,

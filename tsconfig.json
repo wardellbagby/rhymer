@@ -18,7 +18,13 @@
     "baseUrl": "./",
     "outDir": "dist",
     "rootDir": "./",
-    "plugins": [{ "transform": "./di-ts-transformer.js" }],
+    "importHelpers": true,
+    "plugins": [
+      { "transform": "./di-ts-transformer.js" },
+      {
+        "transform": "ts-react-display-name"
+      }
+    ],
     "paths": {
       "@lyricistant/common/*": ["packages/common/main/*"],
       "@lyricistant/renderer/*": ["packages/renderer/main/*"],

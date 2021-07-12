@@ -33,5 +33,10 @@ jobs:
         run: gulp testAll --max-old-space-size=8192
         env:
           DISPLAY: ':99'
+      - name: Upload build artifacts
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with:
+          path: apps/**/dist/
       - name: Check for Lint issues.
         run: npm run lint

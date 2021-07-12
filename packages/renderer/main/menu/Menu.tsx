@@ -9,7 +9,6 @@ import {
   Save,
   Settings,
 } from '@material-ui/icons';
-
 import React, {
   FunctionComponent,
   useCallback,
@@ -72,7 +71,7 @@ const MenuIcon: FunctionComponent<{
   );
 };
 
-export function Menu() {
+export const Menu: React.FC = () => {
   const theme = useTheme();
   const classes = useMenuStyles({ isSmallLayout: useSmallLayout() });
   const useHorizontal = useMediaQuery(theme.breakpoints.down('sm'));
@@ -144,4 +143,4 @@ export function Menu() {
       </Paper>
     </Box>
   );
-}
+};

@@ -10,7 +10,7 @@ import {
   getOutputDirectory as getOutDir,
   Mode,
 } from '@tooling/common-tasks.gulp';
-import webpack, { Configuration } from 'webpack';
+import { Configuration, webpack } from 'webpack';
 import { capitalCase } from 'change-case';
 import del from 'del';
 import { generatePronunciations } from '@tooling/pronunciations.gulp';

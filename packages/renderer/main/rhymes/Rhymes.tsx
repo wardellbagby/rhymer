@@ -148,7 +148,7 @@ const HelperText = ({ text }: { text: string }) => {
   );
 };
 
-export function Rhymes() {
+export const Rhymes: React.FC = () => {
   const [state, send] = useMachine(rhymesMachine);
 
   const selectedWordStore = useSelectedWordStore();
@@ -204,7 +204,7 @@ export function Rhymes() {
       )}
     </Box>
   );
-}
+};
 
 function renderRhyme(
   rhyme: Rhyme,
