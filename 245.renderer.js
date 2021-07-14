@@ -1,0 +1,3 @@
+/*! For license information please see 245.renderer.js.LICENSE.txt */
+(self.webpackChunklyricistant=self.webpackChunklyricistant||[]).push([[245],{6245:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>a});const i=async(e,t,r=e.name)=>{const a=[],n=[];for await(const s of e.values()){const c=`${r}/${s.name}`;"file"===s.kind?n.push(s.getFile().then((t=>(t.directoryHandle=e,Object.defineProperty(t,"webkitRelativePath",{configurable:!0,enumerable:!0,get:()=>c}))))):"directory"===s.kind&&t&&a.push(i(s,t,c))}return[...(await Promise.all(a)).flat(),...await Promise.all(n)]},a=async(e={})=>{e.recursive=e.recursive||!1;const t=await window.showDirectoryPicker();return i(t,e.recursive)}}}]);
+//# sourceMappingURL=245.renderer.js.map

@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="title" content="Lyricistant" />
+    <meta
+      name="description"
+      content="A helpful writing assistant for lyricists!"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lyricistant.app/" />
+    <meta property="og:title" content="Lyricistant" />
+    <meta
+      property="og:description"
+      content="A helpful writing assistant for lyricists!"
+    />
+    <meta
+      property="og:image"
+      content="https://lyricistant.app/social_banner.png"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lyricistant.app/" />
+    <meta property="twitter:title" content="Lyricistant" />
+    <meta
+      property="twitter:description"
+      content="A helpful writing assistant for lyricists!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://lyricistant.app/social_banner.png"
+    />
+    <style>
+      body {
+        height: 100%;
+        width: 100%;
+        overscroll-behavior: none;
+      }
+      #app {
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 500ms linear;
+      }
+    </style>
+    <title>Lyricistant</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="preload.renderer.js"></script>
+    <script async src="renderer.js"></script>
+  </body>
+</html>

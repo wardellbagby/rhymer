@@ -1,0 +1,3 @@
+/*! For license information please see 847.renderer.js.LICENSE.txt */
+(self.webpackChunklyricistant=self.webpackChunklyricistant||[]).push([[847],{5847:(e,t,i)=>{"use strict";i.r(t),i.d(t,{default:()=>n});const s=async e=>{const t=await e.getFile();return t.handle=e,t},n=async(e={})=>{const t={};e.mimeTypes?e.mimeTypes.map((i=>{t[i]=e.extensions||[]})):t["*/*"]=e.extensions||[];const i=await window.showOpenFilePicker({types:[{description:e.description||"",accept:t}],multiple:e.multiple||!1}),n=await Promise.all(i.map(s));return e.multiple?n:n[0]}}}]);
+//# sourceMappingURL=847.renderer.js.map

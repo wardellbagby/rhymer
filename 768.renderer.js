@@ -1,0 +1,3 @@
+/*! For license information please see 768.renderer.js.LICENSE.txt */
+(self.webpackChunklyricistant=self.webpackChunklyricistant||[]).push([[768],{768:(e,t,n)=>{"use strict";n.r(t),n.d(t,{default:()=>s});const s=async(e={})=>new Promise(((t,n)=>{const s=document.createElement("input");s.type="file";const i=[...e.mimeTypes?e.mimeTypes:[],e.extensions?e.extensions:[]].join();let c;s.multiple=e.multiple||!1,s.accept=i||"",e.setupLegacyCleanupAndRejection&&(c=e.setupLegacyCleanupAndRejection((()=>c(n)))),s.addEventListener("change",(()=>{c?.(),t(s.multiple?Array.from(s.files):s.files[0])})),s.click()}))}}]);
+//# sourceMappingURL=768.renderer.js.map

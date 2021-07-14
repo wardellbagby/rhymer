@@ -1,0 +1,3 @@
+/*! For license information please see 605.renderer.js.LICENSE.txt */
+(self.webpackChunklyricistant=self.webpackChunklyricistant||[]).push([[605],{605:(e,t,i)=>{"use strict";i.r(t),i.d(t,{default:()=>c});const c=async(e={})=>(e.recursive=e.recursive||!1,new Promise(((t,i)=>{const c=document.createElement("input");let n;c.type="file",c.webkitdirectory=!0,e.setupLegacyCleanupAndRejection&&(n=e.setupLegacyCleanupAndRejection((()=>n(i)))),c.addEventListener("change",(()=>{n?.();let i=Array.from(c.files);e.recursive||(i=i.filter((e=>2===e.webkitRelativePath.split("/").length))),t(i)})),c.click()})))}}]);
+//# sourceMappingURL=605.renderer.js.map
